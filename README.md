@@ -24,13 +24,15 @@ El objetivo es desarrollar e implementar un algoritmo en el entorno de MATLAB pa
 
 El sistema consiste en un archivo ejecutable de tipo .mlx que integra código fuente, texto enriquecido y visualizaciones gráficas en una misma interfaz. Utiliza las capacidades de cálculo matricial de MATLAB para gestionar variables, realizar operaciones aritméticas complejas y resolver sistemas de ecuaciones. El programa está estructurado para recibir parámetros de entrada, procesar la información mediante funciones lógicas y matemáticas, y presentar los resultados finales de forma gráfica o tabular en la sección de salida.
 
+Palabras clave: Ecuaciones diferenciales ordinarias (EDO); Hidrogeles; Regresión no lineal; ; Liberación controlada; Método de Heun.
+
 ## Actividades a realizar
-1. Configuración del entorno: Inicialización del espacio de trabajo de MATLAB y creación del archivo Live Script (.mlx) para documentar el proceso.
-2. Definición de variables: Declaración de las constantes y parámetros necesarios para el modelo matemático.
-3. Implementación de ecuaciones: Programación de las fórmulas matemáticas y modelos lógicos utilizando la sintaxis de MATLAB.
-4. Procesamiento de datos: Ejecución de los algoritmos de cálculo para obtener las soluciones numéricas del sistema.
-5. Generación de resultados: Creación de gráficas o tablas para interpretar visualmente el comportamiento de los datos obtenidos.
-6. Validación y depuración: Revisión del código y de las salidas obtenidas (output.xml) para asegurar la precisión de los resultados y corregir posibles errores de sintaxis o lógica.
+1. Configuración del entorno y carga de datos: Limpieza del espacio de trabajo en MATLAB y lectura del archivo de datos experimentales (dataS.csv) mediante la extracción de los vectores de tiempo y liberación acumulada.
+2. Exploración y visualización inicial: Tabulación de los datos correspondientes a los cuatro hidrogeles (N45-2MBA12, N32, N35-VP15, N36-2MBA3) y generación de la primera gráfica para observar el comportamiento físico del sistema.
+3. Definición de modelos cinéticos: Programación de las funciones de regresión para los distintos mecanismos de transporte, incluyendo la función de Peppas y el modelo Farmacocinético de primer orden.
+4. Implementación de métodos numéricos (EDO): Integración del algoritmo predictor-corrector del Método de Heun para resolver la ecuación diferencial ordinaria del sistema de liberación y acoplarla al motor de ajuste.
+5. Regresión no lineal y análisis bioestadístico: Ejecución del comando fitnlm iterando sobre cada hidrogel para optimizar los parámetros iniciales y cálculo de estadísticos de bondad de ajuste (grados de libertad, valor t-student, $R^2$ ordinaria y ajustada, y criterios de Akaike).
+6. Generación de resultados in silico: Ploteo de las curvas de ajuste superpuestas a los datos experimentales y exportación de las figuras resultantes en formato vectorial (PDF) con tipografía estandarizada para garantizar rigor académico y visual.
 
 ## Lista de archivos incluidos en el repositorio
 1. Cuaderno computacional de MATLAB [.mlx].
