@@ -3,7 +3,7 @@
 # Practica 3: Liberación controlada de fármacos por hidrogeles
 
 ## Información de la estudiante
-Karla Emilia Silva Pérez [22211767]; l22211767@tectijuana.edu.mx
+Sofía Cristina Durán Muñoz [22211752]; l22211752@tectijuana.edu.mx
 
 Gemelos Digitales
 
